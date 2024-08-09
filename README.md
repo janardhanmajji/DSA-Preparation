@@ -26,7 +26,7 @@ Output: [3,4,6,16,17]
 
 ## Q2. Difference Between Element Sum and Digit Sum of an Array
 
-\*\*You are given a positive integer array nums.
+You are given a positive integer array nums.
 
 The element sum is the sum of all the elements in nums.
 The digit sum is the sum of all the digits (not necessarily distinct) that appear in nums.
