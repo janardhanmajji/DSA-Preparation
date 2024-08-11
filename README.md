@@ -538,3 +538,230 @@ Input: nums = [-1,1,-6,4,5,-6,1,4,1]
 Output: [5,-1,4,4,-6,-6,1,1,1]
 
 Link: https://leetcode.com/problems/sort-array-by-increasing-frequency/description/
+
+## Q28. Check if All Characters Have Equal Number of Occurrences
+
+Given a string s, return true if s is a good string, or false otherwise.
+
+A string s is good if all the characters that appear in s have the same number of occurrences (i.e., the same frequency).
+
+Example 1:
+
+Input: s = "abacbc"
+Output: true
+Explanation: The characters that appear in s are 'a', 'b', and 'c'. All characters occur 2 times in s.
+Example 2:
+
+Input: s = "aaabb"
+Output: false
+Explanation: The characters that appear in s are 'a' and 'b'.
+'a' occurs 3 times while 'b' occurs 2 times, which is not the same number of times.
+
+# Strings
+
+## Q29. Score of a String
+
+You are given a string s. The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
+
+Return the score of s.
+
+Example 1:
+
+Input: s = "hello"
+Output: 13
+
+Example 2:
+
+Input: s = "zaz"
+Output: 50
+
+Link: https://leetcode.com/problems/score-of-a-string/description/
+
+## Q30. Remove vowels from string
+
+Given a string, remove the vowels from the string.
+
+Example 1:
+
+Input: S = "welcome to geeksforgeeks"
+Output: wlcm t gksfrgks
+
+Example 2:
+
+Input: S = "what is your name ?"
+Output: wht s yr nm ?
+
+Link: https://www.geeksforgeeks.org/problems/remove-vowels-from-string1446/1
+
+## Q31. Final Value of Variable After Performing Operations
+
+There is a programming language with only four operations and one variable X:
+
+++X and X++ increments the value of the variable X by 1.
+--X and X-- decrements the value of the variable X by 1.
+Initially, the value of X is 0.
+
+Given an array of strings operations containing a list of operations, return the final value of X after performing all the operations.Example 1:
+
+Input: operations = ["--X","X++","X++"]
+Output: 1
+Explanation: The operations are performed as follows:
+Initially, X = 0.
+--X: X is decremented by 1, X =  0 - 1 = -1.
+X++: X is incremented by 1, X = -1 + 1 =  0.
+X++: X is incremented by 1, X =  0 + 1 =  1.
+
+Example 2:
+
+Input: operations = ["++X","++X","X++"]
+Output: 3
+
+Example 3:
+
+Input: operations = ["X++","++X","--X","X--"]
+Output: 0
+Explanation: The operations are performed as follows:
+Initially, X = 0.
+
+Link: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/description/
+
+Q32. Defanging an IP Address
+
+Given a valid (IPv4) IP address, return a defanged version of that IP address.
+
+A defanged IP address replaces every period "." with "[.]".
+
+Example 1:
+
+Input: address = "1.1.1.1"
+Output: "1[.]1[.]1[.]1"
+Example 2:
+
+Input: address = "255.100.50.0"
+Output: "255[.]100[.]50[.]0"
+
+Link: https://leetcode.com/problems/defanging-an-ip-address/description/
+
+Q33. Find Words Containing Character
+
+You are given a 0-indexed array of strings words and a character x.
+
+Return an array of indices representing the words that contain the character x.
+
+Note that the returned array may be in any order.
+
+Example 1:
+
+Input: words = ["leet","code"], x = "e"
+Output: [0,1]
+Explanation: "e" occurs in both words: "leet", and "code". Hence, we return indices 0 and 1.
+Example 2:
+
+Input: words = ["abc","bcd","aaaa","cbc"], x = "a"
+Output: [0,2]
+Explanation: "a" occurs in "abc", and "aaaa". Hence, we return indices 0 and 2.
+Example 3:
+
+Input: words = ["abc","bcd","aaaa","cbc"], x = "z"
+Output: []
+Explanation: "z" does not occur in any of the words. Hence, we return an empty array.
+
+Link: https://leetcode.com/problems/find-words-containing-character/description/
+
+Q34. Find Target Indices After Sorting Array
+
+A target index is an index i such that nums[i] == target.
+
+Return a list of the target indices of nums after sorting nums in non-decreasing order. If there are no target indices, return an empty list. The returned list must be sorted in increasing order.
+
+Example 1:
+
+Input: nums = [1,2,5,2,3], target = 2
+Output: [1,2]
+Explanation: After sorting, nums is [1,2,2,3,5].
+The indices where nums[i] == 2 are 1 and 2.
+Example 2:
+
+Input: nums = [1,2,5,2,3], target = 3
+Output: [3]
+Explanation: After sorting, nums is [1,2,2,3,5].
+The index where nums[i] == 3 is 3.
+Example 3:
+
+Input: nums = [1,2,5,2,3], target = 5
+Output: [4]
+Explanation: After sorting, nums is [1,2,2,3,5].
+The index where nums[i] == 5 is 4.
+
+Link: https://leetcode.com/problems/find-target-indices-after-sorting-array/description/
+
+Q35. Rank Transform of an Array
+
+Given an array of integers arr, replace each element with its rank.
+
+The rank represents how large the element is. The rank has the following rules:
+
+Rank is an integer starting from 1.
+The larger the element, the larger the rank. If two elements are equal, their rank must be the same.
+Rank should be as small as possible.
+ 
+
+Example 1:
+
+Input: arr = [40,10,20,30]
+Output: [4,1,2,3]
+Explanation: 40 is the largest element. 10 is the smallest. 20 is the second smallest. 30 is the third smallest.
+Example 2:
+
+Input: arr = [100,100,100]
+Output: [1,1,1]
+Explanation: Same elements share the same rank.
+Example 3:
+
+Input: arr = [37,12,28,9,100,56,80,5,12]
+Output: [5,3,4,2,8,6,7,1,3]
+
+Link: https://leetcode.com/problems/rank-transform-of-an-array/description/
+
+Q36. Goal Parser Interpretation
+
+You own a Goal Parser that can interpret a string command. The command consists of an alphabet of "G", "()" and/or "(al)" in some order. The Goal Parser will interpret "G" as the string "G", "()" as the string "o", and "(al)" as the string "al". The interpreted strings are then concatenated in the original order.
+
+Given the string command, return the Goal Parser's interpretation of command.
+
+Example 1:
+
+Input: command = "G()(al)"
+Output: "Goal"
+Explanation: The Goal Parser interprets the command as follows:
+G -> G
+() -> o
+(al) -> al
+The final concatenated result is "Goal".
+Example 2:
+
+Input: command = "G()()()()(al)"
+Output: "Gooooal"
+Example 3:
+
+Input: command = "(al)G(al)()()G"
+Output: "alGalooG"
+
+Link: https://leetcode.com/problems/goal-parser-interpretation/description/
+
+Q37. Maximum Number of Words Found in Sentences
+
+A sentence is a list of words that are separated by a single space with no leading or trailing spaces.
+
+You are given an array of strings sentences, where each sentences[i] represents a single sentence.
+Return the maximum number of words that appear in a single sentence.
+
+Example 1:
+Input: sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+Output: 6
+
+Example 2:
+Input: sentences = ["please wait", "continue to fight", "continue to win"]
+Output: 3
+
+Link: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/description/
