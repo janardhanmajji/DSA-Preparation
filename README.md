@@ -557,6 +557,8 @@ Output: false
 Explanation: The characters that appear in s are 'a' and 'b'.
 'a' occurs 3 times while 'b' occurs 2 times, which is not the same number of times.
 
+Link: https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/description/
+
 # Strings
 
 ## Q29. Score of a String

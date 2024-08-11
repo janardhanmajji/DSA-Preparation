@@ -1,31 +1,46 @@
-// package SetsAndMaps.Easy;
+package SetsAndMaps.Easy;
 
-// import java.util.*;
+import java.util.*;
 
-// public class SortThePeople {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
+public class SortThePeople {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String[] names = new String[n];
+        int[] heights = new int[n];
 
-//         String names = sc.next();
-//         String 
-//     }
+        for (int i = 0; i < n; i++) {
+            names[i] = sc.next();
+        }
 
-//     public static String[] sortPeople(String[] names, int[] heights) {
-//         int n = names.length;
-//         Map<Integer, String> mp = new HashMap<>();
-//         for (int i = 0; i < n; i++) {
-//             mp.put(heights[i], names[i]);
-//         }
+        for (int i = 0; i < n; i++) {
+            heights[i] = sc.nextInt();
+        }
 
-//         Arrays.sort(heights);
+        String[] ans = sortPeople(names, heights);
+        for (int i = 0; i < n; i++) {
+            System.out.print(ans[i] + " ");
+        }
 
-//         String[] sol = new String[n];
+        sc.close();
+    }
 
-//         for (int i = 0; i < n; i++) {
-//             sol[i] = mp.get(heights[n - i - 1]);
-//         }
+    public static String[] sortPeople(String[] names, int[] heights) {
+        int n = names.length;
+        Map<Integer, String> mp = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            mp.put(heights[i], names[i]);
+        }
 
-//         return sol;
+        Arrays.sort(heights);
 
-//     }
-// }
+        String[] sol = new String[n];
+
+        for (int i = 0; i < n; i++) {
+            sol[i] = mp.get(heights[n - i - 1]);
+        }
+
+        return sol;
+
+    }
+}
