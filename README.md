@@ -609,9 +609,9 @@ Input: operations = ["--X","X++","X++"]
 Output: 1
 Explanation: The operations are performed as follows:
 Initially, X = 0.
---X: X is decremented by 1, X =  0 - 1 = -1.
-X++: X is incremented by 1, X = -1 + 1 =  0.
-X++: X is incremented by 1, X =  0 + 1 =  1.
+--X: X is decremented by 1, X = 0 - 1 = -1.
+X++: X is incremented by 1, X = -1 + 1 = 0.
+X++: X is incremented by 1, X = 0 + 1 = 1.
 
 Example 2:
 
@@ -627,7 +627,7 @@ Initially, X = 0.
 
 Link: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/description/
 
-Q32. Defanging an IP Address
+## Q32. Defanging an IP Address
 
 Given a valid (IPv4) IP address, return a defanged version of that IP address.
 
@@ -644,7 +644,7 @@ Output: "255[.]100[.]50[.]0"
 
 Link: https://leetcode.com/problems/defanging-an-ip-address/description/
 
-Q33. Find Words Containing Character
+## Q33. Find Words Containing Character
 
 You are given a 0-indexed array of strings words and a character x.
 
@@ -670,7 +670,7 @@ Explanation: "z" does not occur in any of the words. Hence, we return an empty a
 
 Link: https://leetcode.com/problems/find-words-containing-character/description/
 
-Q34. Find Target Indices After Sorting Array
+## Q34. Find Target Indices After Sorting Array
 
 A target index is an index i such that nums[i] == target.
 
@@ -697,7 +697,7 @@ The index where nums[i] == 5 is 4.
 
 Link: https://leetcode.com/problems/find-target-indices-after-sorting-array/description/
 
-Q35. Rank Transform of an Array
+## Q35. Rank Transform of an Array
 
 Given an array of integers arr, replace each element with its rank.
 
@@ -706,7 +706,6 @@ The rank represents how large the element is. The rank has the following rules:
 Rank is an integer starting from 1.
 The larger the element, the larger the rank. If two elements are equal, their rank must be the same.
 Rank should be as small as possible.
- 
 
 Example 1:
 
@@ -725,7 +724,7 @@ Output: [5,3,4,2,8,6,7,1,3]
 
 Link: https://leetcode.com/problems/rank-transform-of-an-array/description/
 
-Q36. Goal Parser Interpretation
+## Q36. Goal Parser Interpretation
 
 You own a Goal Parser that can interpret a string command. The command consists of an alphabet of "G", "()" and/or "(al)" in some order. The Goal Parser will interpret "G" as the string "G", "()" as the string "o", and "(al)" as the string "al". The interpreted strings are then concatenated in the original order.
 
@@ -751,7 +750,7 @@ Output: "alGalooG"
 
 Link: https://leetcode.com/problems/goal-parser-interpretation/description/
 
-Q37. Maximum Number of Words Found in Sentences
+## Q37. Maximum Number of Words Found in Sentences
 
 A sentence is a list of words that are separated by a single space with no leading or trailing spaces.
 
@@ -767,3 +766,170 @@ Input: sentences = ["please wait", "continue to fight", "continue to win"]
 Output: 3
 
 Link: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/description/
+
+## Q38. Split a String in Balanced Strings
+
+Balanced strings are those that have an equal quantity of 'L' and 'R' characters.
+
+Given a balanced string s, split it into some number of substrings such that:
+
+Each substring is balanced.
+Return the maximum number of balanced strings you can obtain.
+
+Example 1:
+
+Input: s = "RLRRLLRLRL"
+Output: 4
+Explanation: s can be split into "RL", "RRLL", "RL", "RL", each substring contains same number of 'L' and 'R'.
+Example 2:
+
+Input: s = "RLRRRLLRLL"
+Output: 2
+Explanation: s can be split into "RL", "RRRLLRLL", each substring contains same number of 'L' and 'R'.
+Note that s cannot be split into "RL", "RR", "RL", "LR", "LL", because the 2nd and 5th substrings are not balanced.
+
+Link: https://leetcode.com/problems/split-a-string-in-balanced-strings/description/
+
+## Q39. Split Strings by Separator
+
+Given an array of strings words and a character separator, split each string in words by separator.
+
+Return an array of strings containing the new strings formed after the splits, excluding empty strings.
+
+separator is used to determine where the split should occur, but it is not included as part of the resulting strings.
+A split may result in more than two strings.
+The resulting strings must maintain the same order as they were initially given.
+
+Example 1:
+
+Input: words = ["one.two.three","four.five","six"], separator = "."
+Output: ["one","two","three","four","five","six"]
+
+Example 2:
+
+Input: words = ["$easy$","$problem$"], separator = "$"
+Output: ["easy","problem"]
+
+Example 3:
+
+Input: words = ["|||"], separator = "|"
+Output: []
+
+Link: https://leetcode.com/problems/split-strings-by-separator/description/
+
+## Q40. Reverse Prefix of Word
+
+Given a 0-indexed string word and a character ch, reverse the segment of word that starts at index 0 and ends at the index of the first occurrence of ch (inclusive). If the character ch does not exist in word, do nothing.
+
+For example, if word = "abcdefd" and ch = "d", then you should reverse the segment that starts at 0 and ends at 3 (inclusive). The resulting string will be "dcbaefd".
+Return the resulting string.
+
+Example 1:
+
+Input: word = "abcdefd", ch = "d"
+Output: "dcbaefd"
+Explanation: The first occurrence of "d" is at index 3.
+Reverse the part of word from 0 to 3 (inclusive), the resulting string is "dcbaefd".
+Example 2:
+
+Input: word = "xyxzxe", ch = "z"
+Output: "zxyxxe"
+Explanation: The first and only occurrence of "z" is at index 3.
+Reverse the part of word from 0 to 3 (inclusive), the resulting string is "zxyxxe".
+Example 3:
+
+Input: word = "abcd", ch = "z"
+Output: "abcd"
+Explanation: "z" does not exist in word.
+You should not do any reverse operation, the resulting string is "abcd".
+
+Link: https://leetcode.com/problems/reverse-prefix-of-word/description/
+
+## Q41. Check If Two String Arrays are Equivalent
+
+Given two string arrays word1 and word2, return true if the two arrays represent the same string, and false otherwise.
+
+A string is represented by an array if the array elements concatenated in order forms the string.
+
+Example 1:
+
+Input: word1 = ["ab", "c"], word2 = ["a", "bc"]
+Output: true
+
+Example 2:
+
+Input: word1 = ["a", "cb"], word2 = ["ab", "c"]
+Output: false
+
+Example 3:
+
+Input: word1 = ["abc", "d", "defg"], word2 = ["abcddefg"]
+Output: true
+
+Link: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/
+
+## Q42. Truncate Sentence
+
+A sentence is a list of words that are separated by a single space with no leading or trailing spaces. Each of the words consists of only uppercase and lowercase English letters (no punctuation).
+
+For example, "Hello World", "HELLO", and "hello world hello world" are all sentences.
+You are given a sentence s​​​​​​ and an integer k​​​​​​. You want to truncate s​​​​​​ such that it contains only the first k​​​​​​ words. Return s​​​​​​ after truncating it.
+
+Example 1:
+
+Input: s = "Hello how are you Contestant", k = 4
+Output: "Hello how are you"
+
+Example 2:
+
+Input: s = "What is the solution to this problem", k = 4
+Output: "What is the solution"
+
+Example 3:
+
+Input: s = "chopper is not a tanuki", k = 5
+Output: "chopper is not a tanuki"
+
+## Q43. Count Items Matching a Rule
+
+You are given an array items, where each items[i] = [typei, colori, namei] describes the type, color, and name of the ith item. You are also given a rule represented by two strings, ruleKey and ruleValue.
+
+The ith item is said to match the rule if one of the following is true:
+
+ruleKey == "type" and ruleValue == typei.
+ruleKey == "color" and ruleValue == colori.
+ruleKey == "name" and ruleValue == namei.
+Return the number of items that match the given rule.
+
+Example 1:
+
+Input: items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], ruleKey = "color", ruleValue = "silver"
+Output: 1
+Explanation: There is only one item matching the given rule, which is ["computer","silver","lenovo"].
+Example 2:
+
+Input: items = [["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]], ruleKey = "type", ruleValue = "phone"
+Output: 2
+Explanation: There are only two items matching the given rule, which are ["phone","blue","pixel"] and ["phone","gold","iphone"]. Note that the item ["computer","silver","phone"] does not match.
+
+Link: https://leetcode.com/problems/count-items-matching-a-rule/description/
+
+## Q44. Shuffle String
+
+You are given a string s and an integer array indices of the same length. The string s will be shuffled such that the character at the ith position moves to indices[i] in the shuffled string.
+
+Return the shuffled string.
+
+Example 1:
+
+Input: s = "codeleet", indices = [4,5,6,7,0,2,1,3]
+Output: "leetcode"
+Explanation: As shown, "codeleet" becomes "leetcode" after shuffling.
+Example 2:
+
+Input: s = "abc", indices = [0,1,2]
+Output: "abc"
+Explanation: After shuffling, each character remains in its position.
+ 
+Link: https://leetcode.com/problems/shuffle-string/description/
+
