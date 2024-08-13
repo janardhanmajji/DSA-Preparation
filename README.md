@@ -890,6 +890,8 @@ Example 3:
 Input: s = "chopper is not a tanuki", k = 5
 Output: "chopper is not a tanuki"
 
+Link: https://leetcode.com/problems/truncate-sentence/description/
+
 ## Q43. Count Items Matching a Rule
 
 You are given an array items, where each items[i] = [typei, colori, namei] describes the type, color, and name of the ith item. You are also given a rule represented by two strings, ruleKey and ruleValue.
@@ -933,3 +935,82 @@ Explanation: After shuffling, each character remains in its position.
  
 Link: https://leetcode.com/problems/shuffle-string/description/
 
+# Stacks and Queues
+## Q45. Maximum Nesting Depth of the Parentheses
+
+Given a valid parentheses string s, return the nesting depth of s. The nesting depth is the maximum number of nested parentheses.
+
+Example 1:
+
+Input: s = "(1+(2*3)+((8)/4))+1"
+
+Output: 3
+
+Example 2:
+
+Input: s = "(1)+((2))+(((3)))"
+
+Output: 3
+
+Example 3:
+
+Input: s = "()(())((()()))"
+
+## Q46. Remove Outermost Parentheses
+
+A valid parentheses string is either empty "", "(" + A + ")", or A + B, where A and B are valid parentheses strings, and + represents string concatenation.
+
+For example, "", "()", "(())()", and "(()(()))" are all valid parentheses strings.
+A valid parentheses string s is primitive if it is nonempty, and there does not exist a way to split it into s = A + B, with A and B nonempty valid parentheses strings.
+
+Given a valid parentheses string s, consider its primitive decomposition: s = P1 + P2 + ... + Pk, where Pi are primitive valid parentheses strings.
+
+Return s after removing the outermost parentheses of every primitive string in the primitive decomposition of s.
+
+Example 1:
+
+Input: s = "(()())(())"
+Output: "()()()"
+
+Example 2:
+Input: s = "(()())(())(()(()))"
+Output: "()()()()(())"
+
+Example 3:
+Input: s = "()()"
+Output: ""
+
+## Q47. Baseball Game
+
+You are keeping the scores for a baseball game with strange rules. At the beginning of the game, you start with an empty record.
+
+You are given a list of strings operations, where operations[i] is the ith operation you must apply to the record and is one of the following:
+
+An integer x.
+Record a new score of x.
+'+'.
+Record a new score that is the sum of the previous two scores.
+'D'.
+Record a new score that is the double of the previous score.
+'C'.
+Invalidate the previous score, removing it from the record.
+Return the sum of all the scores on the record after applying all the operations.
+
+The test cases are generated such that the answer and all intermediate calculations fit in a 32-bit integer and that all operations are valid.
+
+ 
+
+Example 1:
+
+Input: ops = ["5","2","C","D","+"]
+Output: 30
+
+Example 2:
+
+Input: ops = ["5","-2","4","C","D","9","+","+"]
+Output: 27
+
+Example 3:
+
+Input: ops = ["1","C"]
+Output: 0
